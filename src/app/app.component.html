@@ -1,3 +1,42 @@
-<ion-app>
-  <ion-router-outlet></ion-router-outlet>
-</ion-app>
+
+
+<form (ngSubmit)="saveUser()">
+
+  
+
+  <ion-item>
+    <ion-label position="floating">email</ion-label>
+    <ion-input type="text" name="email" [(ngModel)]="yeniUser.email"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">isim</ion-label>
+    <ion-input type="text" name="isim" [(ngModel)]="yeniUser.isim"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">soyisim</ion-label>
+    <ion-input type="text" name="soyisim" [(ngModel)]="yeniUser.soyisim"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">şifre</ion-label>
+    <ion-input type="text" name="password" [(ngModel)]="yeniUser.password"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">tc</ion-label>
+    <ion-input type="number" name="tc" [(ngModel)]="yeniUser.tc"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">doğum yılı</ion-label>
+    <ion-input type="number" name="dogumYili" [(ngModel)]="yeniUser.dogumYili"></ion-input>
+  </ion-item>
+  
+  
+  
+  
+  <ion-button  class="buttonTarz" type="submit" color="warning">Kayıt Ol</ion-button>
+
+</form>
